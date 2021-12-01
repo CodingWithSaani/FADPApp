@@ -94,9 +94,21 @@
         android:text="@string/alert_screen_text"/>
 
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/move_list_screen_btn"
+        android:layout_below="@id/move_alert_screen_btn"
+        android:layout_centerInParent="true"
+        android:text="@string/list_screen_text"/>
 
-
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/move_custom_list_screen_btn"
+        android:layout_below="@id/move_list_screen_btn"
+        android:layout_centerInParent="true"
+        android:text="@string/custom_list_btn"/>
 
 
 

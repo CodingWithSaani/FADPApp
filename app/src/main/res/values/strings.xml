@@ -9,4 +9,6 @@
     <string name="warning_two">Please enter value in second field</string>
     <string name="move_btn_text">Move</string>
     <string name="alert_screen_text">Alert Screen</string>
+    <string name="list_screen_text">List Screen</string>
+    <string name="custom_list_btn">Custom List</string>
 </resources>

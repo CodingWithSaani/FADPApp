@@ -8,6 +8,8 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import com.tutorials180.firstappfadp.AlertDialogPackage.AlertDialogScreen
+import com.tutorials180.firstappfadp.CustomListAdapter.CustomListPage
+import com.tutorials180.firstappfadp.DataAdapterWork.SimpleListPage
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,7 +20,11 @@ class MainActivity : AppCompatActivity() {
     lateinit var resultTV:TextView
 
     lateinit var moveBtn:Button
+    lateinit var moveToListScreenBtn:Button
+
     lateinit var moveToAlertScreenBtn:Button
+    lateinit var moveToCustomListPageBtn:Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -36,6 +42,9 @@ class MainActivity : AppCompatActivity() {
 
         moveBtn=findViewById(R.id.move_btn)
         moveToAlertScreenBtn=findViewById(R.id.move_alert_screen_btn)
+
+        moveToListScreenBtn=findViewById(R.id.move_list_screen_btn)
+        moveToCustomListPageBtn=findViewById(R.id.move_custom_list_screen_btn)
         calculateBtn.setOnClickListener {
             calculate()
         }
@@ -48,6 +57,22 @@ class MainActivity : AppCompatActivity() {
         moveToAlertScreenBtn.setOnClickListener {
             moveToAlertPage()
         }
+
+        moveToListScreenBtn.setOnClickListener {
+            moveToListPage()
+        }
+
+        moveToCustomListPageBtn.setOnClickListener {
+            moveToCustomListPageMethod()
+        }
+    }
+
+    private fun moveToCustomListPageMethod() {
+        startActivity(Intent(this,CustomListPage::class.java))
+    }
+
+    private fun moveToListPage() {
+        startActivity(Intent(this,SimpleListPage::class.java))
     }
 
     private fun moveToAlertPage() {

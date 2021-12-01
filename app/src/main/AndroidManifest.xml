@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstAppFADP">
         <activity
+            android:name=".CustomListAdapter.CustomListPage"
+            android:exported="false" />
+        <activity
+            android:name=".DataAdapterWork.SimpleListPage"
+            android:exported="false" />
+        <activity
             android:name=".AlertDialogPackage.AlertDialogScreen"
             android:exported="false" />
         <activity
