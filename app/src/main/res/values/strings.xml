@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FirstAppFADP</string>
+    <string name="first_value">First Value</string>
+    <string name="enter_the_first_value_here">Enter the first value here</string>
+    <string name="second_value">Second Value</string>
+    <string name="enter_the_second_value_here">Enter the second value here</string>
+    <string name="calculate_btn_text">Calculate</string>
+    <string name="warning_one">Please enter value in first field</string>
+    <string name="warning_two">Please enter value in second field</string>
+    <string name="move_btn_text">Move</string>
+    <string name="alert_screen_text">Alert Screen</string>
+</resources>

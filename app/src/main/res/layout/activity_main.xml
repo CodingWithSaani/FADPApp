@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/top_layout"
+    android:background="@color/bg_color"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/main_iv"
+        android:src="@drawable/ic_top_image"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fist_field_tv"
+        android:text="@string/first_value"
+        android:textSize="15sp"
+        android:layout_below="@id/main_iv"
+        android:layout_marginStart="10dp"/>
+
+    <EditText
+        android:id="@+id/fist_value_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fist_field_tv"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="@string/enter_the_first_value_here"
+        android:inputType="number"
+        android:maxLength="5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/second_field_tv"
+        android:text="@string/second_value"
+        android:textSize="15sp"
+        android:layout_below="@id/fist_value_et"
+        android:layout_marginStart="10dp"/>
+
+    <EditText
+        android:id="@+id/second_value_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/second_field_tv"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="@string/enter_the_second_value_here"
+        android:inputType="number"
+        android:maxLength="5" />
+
+    <Button
+        android:id="@+id/calculate_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/second_value_et"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/calculate_btn_text"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result_tv"
+        android:layout_below="@id/calculate_btn"
+        android:layout_centerInParent="true"
+        android:textSize="17sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/move_btn"
+        android:layout_below="@id/result_tv"
+        android:layout_centerInParent="true"
+        android:text="@string/move_btn_text"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/move_alert_screen_btn"
+        android:layout_below="@id/move_btn"
+        android:layout_centerInParent="true"
+        android:text="@string/alert_screen_text"/>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
