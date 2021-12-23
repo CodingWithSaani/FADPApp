@@ -5,4 +5,4 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "StudentRecord")
-data class Student(@PrimaryKey val id:Int, @ColumnInfo(name = "studentName") val name:String, val email:String)
+data class Student(@PrimaryKey val id:Int, @ColumnInfo(name = "studentName") val name:String, @ColumnInfo(name = "studentEmail") val email:String)

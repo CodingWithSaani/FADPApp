@@ -1,9 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RoomImplementation.SimpleRoomActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/student_id_et"
+        android:inputType="number"
+        android:hint="Student id"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/student_name_et"
+        android:layout_below="@id/student_id_et"
+        android:inputType="text"
+        android:hint="Student name"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/student_email_et"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/student_name_et"
+        android:hint="Student email"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/save_Student_data_btn"
+        android:text="Save Student Data"
+        android:layout_below="@id/student_email_et"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+</RelativeLayout>

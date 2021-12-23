@@ -110,6 +110,14 @@
         android:layout_centerInParent="true"
         android:text="@string/custom_list_btn"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/move_room_screen_btn"
+        android:layout_below="@id/move_custom_list_screen_btn"
+        android:layout_centerInParent="true"
+        android:text="move to room"/>
+
 
 
 

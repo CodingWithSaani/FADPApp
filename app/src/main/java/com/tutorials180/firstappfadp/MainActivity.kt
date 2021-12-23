@@ -10,6 +10,7 @@ import android.widget.Toast
 import com.tutorials180.firstappfadp.AlertDialogPackage.AlertDialogScreen
 import com.tutorials180.firstappfadp.CustomListAdapter.CustomListPage
 import com.tutorials180.firstappfadp.DataAdapterWork.SimpleListPage
+import com.tutorials180.firstappfadp.RoomImplementation.SimpleRoomActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,6 +26,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var moveToAlertScreenBtn:Button
     lateinit var moveToCustomListPageBtn:Button
 
+    lateinit var moveToRoomPage:Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -45,6 +47,11 @@ class MainActivity : AppCompatActivity() {
 
         moveToListScreenBtn=findViewById(R.id.move_list_screen_btn)
         moveToCustomListPageBtn=findViewById(R.id.move_custom_list_screen_btn)
+
+        moveToRoomPage=findViewById(R.id.move_room_screen_btn)
+        moveToRoomPage.setOnClickListener {
+            startActivity(Intent(MainActivity@this,SimpleRoomActivity::class.java))
+        }
         calculateBtn.setOnClickListener {
             calculate()
         }
