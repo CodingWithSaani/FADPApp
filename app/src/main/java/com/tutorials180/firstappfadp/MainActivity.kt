@@ -11,6 +11,7 @@ import com.tutorials180.firstappfadp.AlertDialogPackage.AlertDialogScreen
 import com.tutorials180.firstappfadp.CustomListAdapter.CustomListPage
 import com.tutorials180.firstappfadp.DataAdapterWork.SimpleListPage
 import com.tutorials180.firstappfadp.RoomImplementation.SimpleRoomActivity
+import com.tutorials180.firstappfadp.SMSWork.SMSWorkActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -27,6 +28,8 @@ class MainActivity : AppCompatActivity() {
     lateinit var moveToCustomListPageBtn:Button
 
     lateinit var moveToRoomPage:Button
+    lateinit var moveToSMSPage:Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -49,6 +52,11 @@ class MainActivity : AppCompatActivity() {
         moveToCustomListPageBtn=findViewById(R.id.move_custom_list_screen_btn)
 
         moveToRoomPage=findViewById(R.id.move_room_screen_btn)
+        moveToSMSPage=findViewById(R.id.move_sms_screen_btn)
+
+        moveToSMSPage.setOnClickListener {
+            startActivity(Intent(MainActivity@this,SMSWorkActivity::class.java))
+        }
         moveToRoomPage.setOnClickListener {
             startActivity(Intent(MainActivity@this,SimpleRoomActivity::class.java))
         }

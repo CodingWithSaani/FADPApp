@@ -1,0 +1,16 @@
+Step 1: Add the permissions to manifest.
+         i)SMS Send
+        ii)SMS READ
+
+Step 2: Add Activity to work for SMS.
+Step 3: Design XML of the SMS activity. (Text of SMS, Receiver Phone Number)
+
+Step 4: Get XML views into Kotlin file.
+Step 5: create a user defined functions in Kotlin file. "sendSMSToUser"
+        5.1) Add try-catch block in function "sendSMSToUser" function
+        5.2) Perform the validation on SMS Text and Receiver Phone Number by using if else statement in "sendSMSToUser" function
+        5.3) Get SMS Text and Receiver Phone number values into variables in "sendSMSToUser" function
+        5.4) Declare and initialize the SmsManager's class object in "sendSMSToUser" function
+        5.5) Call the sendTextMessage method with SmsManager's class object.
+
+Step 6: Call the "sendSMSToUser" function on the onClickListener of sendSMSBtn.

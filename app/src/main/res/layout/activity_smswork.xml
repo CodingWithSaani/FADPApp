@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SMSWork.SMSWorkActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sms_page_sms_text_title_tv"
+        android:padding="10dp"
+        android:text="Enter the text:"
+        android:layout_marginEnd="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sms_page_sms_text_et"
+        android:layout_below="@id/sms_page_sms_text_title_tv"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sms_page_sms_receiver_number_title_tv"
+        android:padding="10dp"
+        android:text="Enter the number:"
+        android:layout_below="@id/sms_page_sms_text_et"
+        android:layout_marginEnd="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sms_page_sms_receiver_number_et"
+        android:layout_below="@id/sms_page_sms_receiver_number_title_tv"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:inputType="number"
+        android:maxLength="14"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sms_page_send_btn"
+        android:text="Send SMS"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/sms_page_sms_receiver_number_et"
+        />
+
+</RelativeLayout>

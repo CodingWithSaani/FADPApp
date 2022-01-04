@@ -118,6 +118,14 @@
         android:layout_centerInParent="true"
         android:text="move to room"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/move_sms_screen_btn"
+        android:layout_below="@id/move_room_screen_btn"
+        android:layout_centerInParent="true"
+        android:text="move to SMS"/>
+
 
 
 
