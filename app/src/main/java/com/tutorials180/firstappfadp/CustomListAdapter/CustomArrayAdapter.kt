@@ -13,7 +13,8 @@ class CustomArrayAdapter (context:Context,
 var playerNames:Array<String>,var playerImages:Array<Int>)
     :ArrayAdapter<String>(context, R.layout.single_row,playerNames)
 {
-    override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
+    override fun getView(position: Int, convertView: View?, parent: ViewGroup): View
+    {
         var singleRow=LayoutInflater.from(context).inflate(R.layout.single_row,null,true)
 
         var playerIV=singleRow.findViewById(R.id.singleRow_iv) as ImageView

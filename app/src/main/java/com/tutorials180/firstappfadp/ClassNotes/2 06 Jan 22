@@ -1,0 +1,19 @@
+Concept :RecyclerView Implementation
+
+<> Why we are using it?
+   It is going to solve the problems comes with getView Method.
+   <>.It will only inflate view once.
+   <>.It wil reuse the views.
+
+Part of RecyclerView implementation:
+    >RecyclerView.Adapter  <= it will be a kotlin class.
+    >recyclerView <= view it will be implemented in xml file.
+
+RecyclerView Implementation in Kotlin
+Step 1 : Create a new package with name "RecyclerViewImplementation"
+Step 2 : Create an activity (RVActivity) inside package with name "RecyclerViewImplementation"
+
+Step 3 : Implement recyclerView on RVActivity's xml file.
+Step 4 : Define data, that you want to show on recyler view.
+         For this purpose we created a list of students.
+
