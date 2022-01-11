@@ -12,12 +12,12 @@
         />
 
     <TextView
+        android:id="@+id/rv_sr_car_brand_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:id="@+id/rv_sr_car_brand_tv"
         android:layout_toRightOf="@id/rv_sr_iv"
-        android:text="Brand : Toyota"/>
+        android:padding="10dp"
+        android:text="Brand : Toyota" />
 
     <TextView
         android:layout_width="match_parent"
@@ -30,13 +30,13 @@
         />
 
     <TextView
+        android:id="@+id/rv_sr_car_type_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:id="@+id/rv_sr_car_type_tv"
-        android:layout_toRightOf="@id/rv_sr_iv"
         android:layout_below="@id/rv_sr_car_model_tv"
-        android:text="Type : Auto"/>
+        android:layout_toRightOf="@id/rv_sr_iv"
+        android:padding="10dp"
+        android:text="Type : Auto" />
 
     <View
         android:layout_width="match_parent"
