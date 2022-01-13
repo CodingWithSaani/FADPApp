@@ -1,5 +1,6 @@
 package com.tutorials180.firstappfadp.RecyclerViewImplementation
 
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
@@ -17,14 +18,21 @@ class RVCustomAdapter(val listOfCars:List<Cars>):RecyclerView.Adapter<RVCustomAd
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RvViewHolder {
-        TODO("Not yet implemented")
+
+        val singleRow=LayoutInflater.from(parent.context).inflate(R.layout.rv_single_row,parent,false)
+        val rvViewHolder=RvViewHolder(singleRow)
+
+        return rvViewHolder
     }
 
     override fun onBindViewHolder(holder: RvViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        holder.brandTV.text=listOfCars[position].brand
+        holder.modelTV.text=listOfCars[position].model.toString()
+
+        holder.typeTV.text=listOfCars[position].type
     }
 
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+        return listOfCars.size
     }
 }

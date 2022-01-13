@@ -10,6 +10,7 @@ import android.widget.Toast
 import com.tutorials180.firstappfadp.AlertDialogPackage.AlertDialogScreen
 import com.tutorials180.firstappfadp.CustomListAdapter.CustomListPage
 import com.tutorials180.firstappfadp.DataAdapterWork.SimpleListPage
+import com.tutorials180.firstappfadp.RecyclerViewImplementation.RVActivity
 import com.tutorials180.firstappfadp.RoomImplementation.SimpleRoomActivity
 import com.tutorials180.firstappfadp.SMSWork.SMSWorkActivity
 
@@ -55,7 +56,8 @@ class MainActivity : AppCompatActivity() {
         moveToSMSPage=findViewById(R.id.move_sms_screen_btn)
 
         moveToSMSPage.setOnClickListener {
-            startActivity(Intent(MainActivity@this,SMSWorkActivity::class.java))
+//            startActivity(Intent(MainActivity@this,SMSWorkActivity::class.java))
+            startActivity(Intent(MainActivity@this,RVActivity::class.java))
         }
         moveToRoomPage.setOnClickListener {
             startActivity(Intent(MainActivity@this,SimpleRoomActivity::class.java))
