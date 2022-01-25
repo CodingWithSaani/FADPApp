@@ -15,4 +15,34 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"/>
 
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fb_add_document_with_id_btn"
+        android:text="Add Document With ID"
+        android:layout_below="@id/fb_add_document_btn"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fb_get_doc_with_id_btn"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Fetch Single Doc"
+        android:textAllCaps="false"
+        android:layout_below="@id/fb_add_document_with_id_btn"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fb_delete_doc_with_id_btn"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Delete Single Doc"
+        android:textAllCaps="false"
+        android:layout_below="@id/fb_get_doc_with_id_btn"/>
+
 </RelativeLayout>
