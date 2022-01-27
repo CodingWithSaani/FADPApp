@@ -8,12 +8,12 @@
     tools:context=".FirebaseWorking.FirebaseWorkingActivity">
 
     <Button
+        android:id="@+id/fb_add_document_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/fb_add_document_btn"
-        android:text="Add Document"
         android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"/>
+        android:layout_marginEnd="10dp"
+        android:text="Add Document" />
 
 
     <Button

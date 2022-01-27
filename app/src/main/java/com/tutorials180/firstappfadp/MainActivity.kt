@@ -10,6 +10,7 @@ import android.widget.Toast
 import com.tutorials180.firstappfadp.AlertDialogPackage.AlertDialogScreen
 import com.tutorials180.firstappfadp.CustomListAdapter.CustomListPage
 import com.tutorials180.firstappfadp.DataAdapterWork.SimpleListPage
+import com.tutorials180.firstappfadp.FirebaseWorking.FirebaseAuthActivity
 import com.tutorials180.firstappfadp.FirebaseWorking.FirebaseWorkingActivity
 import com.tutorials180.firstappfadp.RecyclerViewImplementation.RVActivity
 import com.tutorials180.firstappfadp.RoomImplementation.SimpleRoomActivity
@@ -60,7 +61,8 @@ class MainActivity : AppCompatActivity() {
 //            startActivity(Intent(MainActivity@this,SMSWorkActivity::class.java))
 //            startActivity(Intent(MainActivity@this,RVActivity::class.java))
 
-            startActivity(Intent(MainActivity@this,FirebaseWorkingActivity::class.java))
+            //startActivity(Intent(MainActivity@this,FirebaseWorkingActivity::class.java))
+            startActivity(Intent(MainActivity@this,FirebaseAuthActivity::class.java))
         }
         moveToRoomPage.setOnClickListener {
             startActivity(Intent(MainActivity@this,SimpleRoomActivity::class.java))
