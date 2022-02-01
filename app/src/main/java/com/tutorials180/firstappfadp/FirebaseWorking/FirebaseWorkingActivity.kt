@@ -50,7 +50,7 @@ class FirebaseWorkingActivity : AppCompatActivity()
         try
         {
             mProgressDialog.show()
-            var studentData=HashMap<String,Any>()
+            val studentData=HashMap<String,Any>()
             studentData["name"]="Irfan Khan"
 
             studentData["rollNo"]=10
@@ -79,7 +79,7 @@ class FirebaseWorkingActivity : AppCompatActivity()
         try
         {
             mProgressDialog.show()
-            var sikandarDoc = HashMap<String,Any>()
+            val sikandarDoc = HashMap<String,Any>()
             sikandarDoc["name"] = "Sikandar Khan"
 
             sikandarDoc["age"] = 22
@@ -88,17 +88,17 @@ class FirebaseWorkingActivity : AppCompatActivity()
             mFirebaseFirestore.collection("Student").document("Sikandar").set(sikandarDoc)
                 .addOnSuccessListener {_:Void? ->
                     mProgressDialog.dismiss()
-                    Toast.makeText(applicationContext, "Data is added", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(applicationContext, "Data is added", Toast.LENGTH_SHORT).show()
                 }
                 .addOnFailureListener {ex ->
                     mProgressDialog.dismiss()
-                    Toast.makeText(applicationContext, "Data is not added:+ ${ex.message}", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(applicationContext, "Data is not added:+ ${ex.message}", Toast.LENGTH_SHORT).show()
                 }
         }
         catch (ex:Exception)
         {
             mProgressDialog.dismiss()
-            Toast.makeText(applicationContext, ex.message, Toast.LENGTH_SHORT).show();
+            Toast.makeText(applicationContext, ex.message, Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -112,17 +112,17 @@ class FirebaseWorkingActivity : AppCompatActivity()
                 .addOnSuccessListener { doc ->
                     mProgressDialog.dismiss()
                     Toast.makeText(applicationContext, "Name : ${doc["name"]}," +
-                            "Rollno : ${doc["rollNo"]}, Age : ${doc["age"]}", Toast.LENGTH_SHORT).show();
+                            "Rollno : ${doc["rollNo"]}, Age : ${doc["age"]}", Toast.LENGTH_SHORT).show()
                 }
                 .addOnFailureListener { ex ->
                     mProgressDialog.dismiss()
-                    Toast.makeText(applicationContext, "${ex.message}", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(applicationContext, "${ex.message}", Toast.LENGTH_SHORT).show()
                 }
         }
         catch (ex:Exception)
         {
             mProgressDialog.dismiss()
-            Toast.makeText(applicationContext, "Exception while fetching data: ${ex.message}", Toast.LENGTH_SHORT).show();
+            Toast.makeText(applicationContext, "Exception while fetching data: ${ex.message}", Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -135,17 +135,17 @@ class FirebaseWorkingActivity : AppCompatActivity()
                 .delete()
                 .addOnSuccessListener { _:Void? ->
                     mProgressDialog.dismiss()
-                    Toast.makeText(applicationContext, "Document is deleted", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(applicationContext, "Document is deleted", Toast.LENGTH_SHORT).show()
                 }
                 .addOnFailureListener { ex ->
                     mProgressDialog.dismiss()
-                    Toast.makeText(applicationContext, "Error while deleting : ${ex.message}", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(applicationContext, "Error while deleting : ${ex.message}", Toast.LENGTH_SHORT).show()
                 }
         }
         catch (ex:Exception)
         {
             mProgressDialog.dismiss()
-            Toast.makeText(applicationContext, "${ex.message}", Toast.LENGTH_SHORT).show();
+            Toast.makeText(applicationContext, "${ex.message}", Toast.LENGTH_SHORT).show()
         }
     }
 
