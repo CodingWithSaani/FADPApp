@@ -12,6 +12,7 @@ import com.tutorials180.firstappfadp.CustomListAdapter.CustomListPage
 import com.tutorials180.firstappfadp.DataAdapterWork.SimpleListPage
 import com.tutorials180.firstappfadp.FirebaseWorking.FirebaseAuthActivity
 import com.tutorials180.firstappfadp.FirebaseWorking.FirebaseWorkingActivity
+import com.tutorials180.firstappfadp.LocationWorking.LocationWorkingActivity
 import com.tutorials180.firstappfadp.RecyclerViewImplementation.RVActivity
 import com.tutorials180.firstappfadp.RoomImplementation.SimpleRoomActivity
 import com.tutorials180.firstappfadp.SMSWork.SMSWorkActivity
@@ -62,7 +63,8 @@ class MainActivity : AppCompatActivity() {
 //            startActivity(Intent(MainActivity@this,RVActivity::class.java))
 
             //startActivity(Intent(MainActivity@this,FirebaseWorkingActivity::class.java))
-            startActivity(Intent(MainActivity@this,FirebaseAuthActivity::class.java))
+            //startActivity(Intent(MainActivity@this,FirebaseAuthActivity::class.java))
+            startActivity(Intent(MainActivity@this,LocationWorkingActivity::class.java))
         }
         moveToRoomPage.setOnClickListener {
             startActivity(Intent(MainActivity@this,SimpleRoomActivity::class.java))
